@@ -23,11 +23,8 @@ jobs:
           python -m pip install --upgrade pip
           pip install firebase-admin
 
-      - name: Export Firebase Credentials
-        run: echo "${{ secrets.FIREBASE_SERVICE_ACCOUNT }}" > serviceAccountKey.json
-
-      - name: Echo
-        run: cat serviceAccountKey.json
+      - name: Debug: List repository contents
+        run: ls -R
 
       - name: Reset Seat Availability
         run: python reset_seats_availability.py
