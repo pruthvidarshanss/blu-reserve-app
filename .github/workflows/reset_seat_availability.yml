@@ -27,7 +27,7 @@ jobs:
         run: echo "${{ secrets.FIREBASE_SERVICE_ACCOUNT }}" > serviceAccountKey.json
 
       - name: Echo
-        run: echo serviceAccountKey.json
+        run: cat serviceAccountKey.json
 
       - name: Reset Seat Availability
         run: python reset_seats_availability.py
