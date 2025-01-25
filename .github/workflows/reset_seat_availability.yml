@@ -23,11 +23,8 @@ jobs:
           python -m pip install --upgrade pip
           pip install firebase-admin
 
-      - name: List repository contents for debugging
+      - name: Debug: List repository contents
         run: ls -R
 
-      - name: Present working directory
-        run: pwd
-
       - name: Reset Seat Availability
-        run: python reset_seat_availability.py
+        run: python reset_seats_availability.py
