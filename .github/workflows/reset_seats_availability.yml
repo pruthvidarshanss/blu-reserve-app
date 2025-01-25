@@ -1,4 +1,4 @@
-name: Reset Seat Availability
+name: Reset Seats Availability
 
 on:
   schedule:
