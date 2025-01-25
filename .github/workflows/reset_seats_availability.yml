@@ -23,8 +23,5 @@ jobs:
           python -m pip install --upgrade pip
           pip install firebase-admin
 
-      - name: Debug: List repository contents
-        run: ls -R
-
-      - name: Reset Seat Availability
+      - name: Reset Seats Availability
         run: python reset_seats_availability.py
