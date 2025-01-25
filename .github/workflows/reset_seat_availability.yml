@@ -26,5 +26,8 @@ jobs:
       - name: List repository contents for debugging
         run: ls -R
 
+      - name: Present working directory
+        run: pwd
+
       - name: Reset Seat Availability
         run: python reset_seat_availability.py
