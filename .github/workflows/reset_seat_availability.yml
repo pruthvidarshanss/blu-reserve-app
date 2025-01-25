@@ -26,5 +26,8 @@ jobs:
       - name: Export Firebase Credentials
         run: echo "${{ secrets.FIREBASE_SERVICE_ACCOUNT }}" > serviceAccountKey.json
 
+      - name: Echo
+        run: echo serviceAccountKey.json
+
       - name: Reset Seat Availability
         run: python reset_seats_availability.py
